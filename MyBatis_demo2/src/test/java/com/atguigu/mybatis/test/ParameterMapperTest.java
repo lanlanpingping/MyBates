@@ -40,12 +40,14 @@ public class ParameterMapperTest {
      * b> 以param1，param2...为键，以参数值为值
      *因此只需要通过#{}和${}以键的方式访问值即可，但是需要注意${}的单引号问题
      *
+     * 测试
      */
 
 
 
     @Test
     public void getAllUser() {
+
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
         ParameterMapper mapper = sqlSession.getMapper(ParameterMapper.class);
 
